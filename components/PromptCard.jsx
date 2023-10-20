@@ -17,7 +17,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   return (
     <div className="prompt_card">
       <div className="flex justify-between items-start gap-5">
-        <div className="flex-1 flex justify-start items-start gap-3 cursor-pointer">
+        <div className="flex-1 flex justify-start items-center gap-3 cursor-pointer">
           <Image
             src={post.creator.image}
             alt="user_image"
@@ -42,6 +42,8 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
               ? '/assets/icons/tick.svg'
               : '/assets/icons/copy.svg'
             }
+            width={12}
+            height={12}
           />
         </div>
       </div>
